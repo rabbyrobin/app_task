@@ -41,5 +41,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_REGISTRY }}/rest-api-task:${{ github.event.release.tag }} .
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/rest-api-task:${{ github.event.release.tag }} .
           docker push ${{ secrets.DOCKER_REGISTRY }}/rest-api-task:${{ github.event.release.tag }}
