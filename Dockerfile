@@ -2,10 +2,10 @@
 FROM python:3.8-slim
 
 # Set a working directory
-WORKDIR ./
+WORKDIR ./app
 
 # Copy only the necessary files
-COPY config.py requirements.txt ./
+COPY app.py config.py requirements.txt ./app
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt && \
@@ -24,4 +24,4 @@ EXPOSE 5000
 ENV PYTHONUNBUFFERED=1
 
 # Command to run the application
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]
