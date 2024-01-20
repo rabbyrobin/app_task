@@ -60,4 +60,4 @@ jobs:
         with:
           context: Dockerfile
           push: true
-          tags: rabbyrobin/restapi-test:latest
+          tags: rabbyrobin/restapi-test:1
