@@ -2,7 +2,7 @@
 FROM python:3.8-slim
 
 # Set a working directory
-WORKDIR /app
+WORKDIR ./
 
 # Copy only the necessary files
 COPY app.py config.py requirements.txt ./
