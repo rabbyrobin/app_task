@@ -38,6 +38,7 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH=src
+
 name: Build and Push Docker image to Docker Hub
 
 on: push
@@ -58,6 +59,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: DockerFileFolder/
+          context: Dockerfile
           push: true
           tags: rabbyrobin/restapi-test:latest
