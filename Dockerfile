@@ -2,10 +2,10 @@
 FROM python:3.8-slim
 
 # Set a working directory
-WORKDIR ./app
+WORKDIR ./
 
 # Copy only the necessary files
-COPY app.py config.py requirements.txt ./app
+COPY app.py config.py requirements.txt ./
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt && \
