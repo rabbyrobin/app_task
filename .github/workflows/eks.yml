@@ -1,18 +1,18 @@
-name: "01-EKS"
+name: "eks"
 on:
   workflow_dispatch:
 
 jobs:
   Plan:
-    uses: rabbyrobin/app_task/TRFEKS-Lab/aws_tf_plan.yml@main
+    uses: rabbyrobin/app_task.github/workflow/eks.yml@Aws-Terraform-Lab
     with:
-      gh_environment: dev
+      gh_environment: test-dev
     secrets:
       cli_config_credentials_token: ${{ secrets.TRF_API_TOKEN }}
 
   Apply:
     needs: Plan
-    uses: rabbyrobin/app_task/TRFEKS-Lab/aws_tf_plan.ymlAws-Terraform-Lab
+    uses: rabbyrobin/app_task.github/workflow/eks.yml@Aws-Terraform-Lab
     with:
       gh_environment: test-dev
     secrets:
