@@ -20,9 +20,8 @@ vpc
  - variables.tf
 
 
-
- main.tf
- variables.tf
- provider.tf
+main.tf
+variables.tf
+provider.tf
 
  
