@@ -58,7 +58,7 @@ jobs:
         run: |
          docker buildx create --use
          docker buildx inspect
-         docker buildx build --platform linux/amd64,linux/arm64 -t rabbyrobin/restapi-test:latest .
-         docker buildx build --load -t rabbyrobin/restapi-test:latest  .
-         docker push rabbyrobin/restapi-test:latest
+         docker buildx build --platform linux/amd64,linux/arm64 -t rabbyrobin/restapi-test:${{github.run_number}} .
+         docker buildx build --load -t rabbyrobin/restapi-test:${{github.run_number}}  .
+         docker push rabbyrobin/restapi-test:${{github.run_number}}
 
