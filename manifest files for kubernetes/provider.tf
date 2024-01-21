@@ -21,7 +21,7 @@ backend "remote" {
 		organization = "AWSLABTASK"
 
 		workspaces {
-			name = "app_task"
+			name = "apptask"
 		}
 	}
 }
