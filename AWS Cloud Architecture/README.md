@@ -1,10 +1,10 @@
 Diagram Explanation:
 
 1. Global Services:
-a. Used Amazon Route 53 for DNS and global load balancing and networking service AWS Global Accelerator for improving availability and performance.
+a. Used Amazon Route 53 for DNS and global load balancing and networking service, AWS Global Accelerator for improving availability and performance.
 
 2. Application Service: Backend application server can be deployed multiple AWS regions to ensure global availability.
-   a. I used Use Amazon EC2 instances in Auto Scaling Groups to handle variable load.
+   a. I used Amazon EC2 instances in Auto Scaling Groups to handle variable load.
    b. Implemented AWS Fargate for containerized applications.
    c. Implement an Application Load Balancer (ALB) to distribute traffic across backend instances.
 
