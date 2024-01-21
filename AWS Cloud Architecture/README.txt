@@ -1,3 +1,0 @@
-Diagram Explanation:
-
-Global Services
