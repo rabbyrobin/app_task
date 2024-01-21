@@ -1,18 +1,18 @@
-Step 1: Terraform Code for AWS EKS Cluster
+Terraform Code for AWS EKS Cluster: This code will deploy single node in the cluster and can be modified for more as per requirement.
 File Structure:
 Workflow
- - eks.yml
+ - eks.yml (this file call plan.yml and apply.yml and will execute plan.yml first then apply.yml.)
  - aws_tf_plan.yml
  - aws_tf_apply.yml
 
 Manifest files for Kubernetes
  eks
   - main.tf ( this will create the resources to spinup the eks cluster. also will configured iam roles, eks node group. it'll also configure the inbound and outbound traffic by allowing ports).
-  - outputs.tf (
-  - variables.tf
+  - outputs.tf (it will print certain outputs.).
+  - variables.tf(this will given as a input from the main.tf under manifest files from kubernetes directory.).
 
 vpc (for configuring virtual private networking)
- - main.tf
+ - main.tf (this code will create vpc, subnets and internet gateway).
  - outputs.tf
  - variables.tf
 

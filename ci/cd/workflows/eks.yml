@@ -4,7 +4,7 @@ on:
 
 jobs:
   Plan:
-    uses: rabbyrobin/app_task.github/workflow/eks.yml@Aws-Terraform-Lab
+    uses: rabbyrobin/app_task.github/ci/cd/workflow/eks.yml@Aws-Terraform-Lab
     with:
       gh_environment: test-dev
     secrets:
@@ -12,7 +12,7 @@ jobs:
 
   Apply:
     needs: Plan
-    uses: rabbyrobin/app_task.github/workflow/eks.yml@Aws-Terraform-Lab
+    uses: rabbyrobin/app_task.github/ci/cd/workflow/eks.yml@Aws-Terraform-Lab
     with:
       gh_environment: test-dev
     secrets:
