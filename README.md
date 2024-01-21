@@ -49,4 +49,4 @@ Example Response:
 Notes:
 The application fetches weather data for Dhaka from the OpenWeatherMap API. Make sure to replace 'your_openweathermap_api_key' in the config.py file with your actual API key.
 The datetime is adjusted to GMT +6 for Dhaka.
-The application runs on http://0.0.0.0:5000/ by default. It will let the app to obtain the system ip address.
+The application runs on http://0.0.0.0:5000/ by default. It will let the app to obtain the system ip address. Also you can run the app by puling the docker image from my public repository "https://hub.docker.com/repository/docker/rabbyrobin/restapi-test/general".
