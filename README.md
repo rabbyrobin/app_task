@@ -9,7 +9,7 @@ Manifest files for Kubernetes
  eks
   - main.tf ( this will create the resources to spinup the eks cluster. also will configured iam roles, eks node group. it'll also configure the inbound and outbound traffic by allowing ports).
   - outputs.tf (it will print certain outputs.).
-  - variables.tf(this will given as a input from the main.tf under manifest files from kubernetes directory.).
+  - variables.tf(this will given as a input from the main.tf under "manifest files for kubernetes" directory.).
 
 vpc (for configuring virtual private networking)
  - main.tf (this code will create vpc, subnets and internet gateway).
