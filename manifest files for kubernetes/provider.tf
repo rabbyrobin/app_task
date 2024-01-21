@@ -18,7 +18,7 @@ terraform {
 
 backend "remote" {
 		hostname = "app.terraform.io"
-		organization = "AWS_LAB_TASK"
+		organization = "AWSLABTASK"
 
 		workspaces {
 			name = "app_task"
