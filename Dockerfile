@@ -5,7 +5,7 @@ FROM python:3.10-alpine as builder
 WORKDIR /app
 
 # Copy only the necessary files
-COPY app.py config.py requirements.txt /app
+COPY app.py config.py requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
