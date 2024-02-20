@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 FROM python:3.10-alpine
 WORKDIR /app
-COPY --from=builder /usr/local/lib/python3.10/dist-packages /usr/local/lib/python3.10/dist-packages
+COPY --from=builder /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages
 # Drop privileges by creating a non-root user
 RUN useradd -m appuser
 USER appuser
