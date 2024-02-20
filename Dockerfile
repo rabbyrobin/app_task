@@ -2,7 +2,7 @@
 FROM python:3.10-alpine as builder
 
 # Set a working directory
-WORKDIR /app
+WORKDIR ./
 
 # Copy only the necessary files
 COPY app.py config.py requirements.txt /app
@@ -24,4 +24,4 @@ EXPOSE 5000
 ENV PYTHONUNBUFFERED=1
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
